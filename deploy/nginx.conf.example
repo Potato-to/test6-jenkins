@@ -1,0 +1,14 @@
+server {
+    listen 80;
+    server_name example.com;
+    root /srv/test6/current;
+    index index.html;
+    location ~ /\. { deny all; }
+    location = /index.html {
+        add_header Cache-Control "no-cache, no-store, must-revalidate" always;
+    }
+    location / { try_files $uri $uri/ /index.html; }
+    # Configure API and upload proxy paths for your backend when using same-origin requests.
+    # location /api/ { proxy_pass http://127.0.0.1:8081; }
+    # location = /files/upload { proxy_pass http://127.0.0.1:8081; }
+}

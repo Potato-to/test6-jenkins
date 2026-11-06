@@ -1,0 +1,61 @@
+{
+  "vben": {
+    "repository": "https://github.com/vbenjs/vue-vben-admin",
+    "commit": "0b863783ef9dfba3945c4c1f5085e81c051a6b43",
+    "packages": [
+      "@vben-core/composables",
+      "@vben-core/design",
+      "@vben-core/form-ui",
+      "@vben-core/icons",
+      "@vben-core/layout-ui",
+      "@vben-core/menu-ui",
+      "@vben-core/popup-ui",
+      "@vben-core/preferences",
+      "@vben-core/shadcn-ui",
+      "@vben-core/shared",
+      "@vben-core/tabs-ui",
+      "@vben-core/typings",
+      "@vben/constants",
+      "@vben/hooks",
+      "@vben/icons",
+      "@vben/layouts",
+      "@vben/locales",
+      "@vben/preferences",
+      "@vben/request",
+      "@vben/stores",
+      "@vben/styles",
+      "@vben/tailwind-config",
+      "@vben/types",
+      "@vben/utils"
+    ],
+    "creator": {
+      "name": "create-vben-admin",
+      "version": "1.0.1",
+      "official": false,
+      "base": "web-antd; UI adapters follow official web-ele and web-naive"
+    }
+  },
+  "uniapp": {
+    "creator": "create-uni",
+    "version": "2.17.2",
+    "repository": "https://github.com/uni-helper/create-uni",
+    "command": "create-uni .upstream/created-uni --ts --ui uni",
+    "dcloudVersion": "3.0.0-5020620260917001"
+  },
+  "localTemplates": {
+    "admin": {
+      "name": "vben-develop-frame",
+      "sourceVersion": "2.11.5",
+      "targetVersion": "5.8.0",
+      "style": "UnoCSS application + upstream vendor compiler"
+    },
+    "mobile": {
+      "name": "uniapp-develop-frame",
+      "sourceVersion": "0.0.0",
+      "style": "Tailwind CSS 3 + SCSS",
+      "qr": "qrcode-generator@2.0.4"
+    },
+    "migrationDate": "2026-11-03",
+    "sourceDirectoriesModified": false
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+unpackage
+packages
+internal
+pnpm-lock.yaml
+package-lock.json
+src/manifest.json
+

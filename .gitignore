@@ -1,0 +1,8 @@
+node_modules/
+dist/
+unpackage/
+*.local
+*.log
+deploy.env
+.deployment/
+

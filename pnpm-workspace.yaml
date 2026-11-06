@@ -1,0 +1,17 @@
+packages:
+  - packages/**
+  - internal/*
+  - apps/*
+
+strictPeerDependencies: false
+autoInstallPeers: true
+
+allowBuilds:
+  esbuild: true
+  '@parcel/watcher': true
+  core-js: true
+  core-js-pure: true
+  vue-demi: true
+
+overrides:
+  { 'stylelint-config-html': '1.1.0', 'stylelint-config-recommended': '17.0.0', 'vue': '3.5.41' }
