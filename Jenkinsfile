@@ -64,6 +64,9 @@ set -Eeuo pipefail
       }
     }
     stage('Build static files') {
+      tools {
+        nodejs 'node24'
+      }
       when { expression { env.DEPLOY_BRANCH in ['main', 'develop', 'test'] || env.DEPLOY_BRANCH.startsWith('release/') } }
       steps {
         sh '''#!/usr/bin/env bash
